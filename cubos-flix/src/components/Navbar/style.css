@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    margin-left: 50px;
+    background-color: #0F1C26;
+    color: white;
+}
+
+.navbar input {
+    width: 70%;
+    background-color: #171B1E;
+    border: none;
+    margin: 20px;
+    height: 25px;
+    padding: 15px;
+    font-size: 10px;
+    color: #FDFDFD;
+    background-image: url('../../images/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.navbar input:focus {
+    margin: 1px solid #FDFDFD;
+}
+
+.navbar p {
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+.avatar {
+    width: 40px;
+    margin: 20px;
+}

@@ -1,0 +1,14 @@
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: #A785ED;
+    width: 300px;
+    color: #FDFDFD;
+    height: 50px;
+}
+
+.cart-items {
+    background-color: #161B1E;
+    color: #FDFDFD;
+    width: 300px;
+}
