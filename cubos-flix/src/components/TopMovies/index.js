@@ -20,7 +20,7 @@ function TopMovies({ movies }) {
         <div className="top-movies">
             <h2>Top Filmes</h2>
             <div>
-                <Card movies={topMovies}/>
+                {/* <Card movies={topMovies}/> */}
             </div>
         </div>
     )

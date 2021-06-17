@@ -34,11 +34,13 @@ function App() {
   return (
     <div className="app">
       <Navbar/>
+      <div className="cart">
+        <Cart/>
+      </div>
       <TopMovies movies={movies}/>
       <div className="movies-list">
       <Card movies={movies}/>
       </div>
-      <Cart/>
     </div>
   );
 }
