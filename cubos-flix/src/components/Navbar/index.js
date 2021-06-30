@@ -1,16 +1,29 @@
-import './style.css';
-import Logo from '../../images/logo.svg'
-import Avatar from '../../images/avatar.jpeg'
 
-function Navbar() {
+import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import profileImg from "../../assets/images/avatar.jpeg";
+import SearchInput from "../SearchInput/";
+import "./style.css";
+
+export default function Header({
+    setMoviesNameFilter,
+    setIsMobileBagOpen,
+}) {
     return (
-        <div className="navbar">
-            <img src={Logo} alt="Logo"/>
-            <input type="search" id="searchMovie" name="searchMovie" placeholder="Pesquise filmes..."/>
-            <p>Bem-vindo Garcon</p>
-            <img src={Avatar} alt="Avatar" className="avatar"/>
-        </div>
+        <header className="header">
+            <Logo
+                className="header__logo"
+                role="button"
+                onClick={() => setIsMobileBagOpen(false)}
+            />
+            <SearchInput setMoviesNameFilter={setMoviesNameFilter} />
+            <div className="header__item-container">
+                Welcome, JG
+                <img
+                    className="item-container__img"
+                    src={profileImg}
+                    alt="profile"
+                />
+            </div>
+        </header>
     );
 }
-
-export default Navbar;

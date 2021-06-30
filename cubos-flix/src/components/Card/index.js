@@ -1,30 +1,31 @@
-import './style.css';
-import { ReactComponent as Star } from '../../images/golden-star.svg'
+import React from 'react';
 
-function Card({ movies }) {
-    console.log(movies)
-    return (
-        <>
-        { movies.map(item => (
-            <div 
-            className="card" 
-            style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${item.poster})`,
-            }}>
-                <div className="movie-info">
-                    <h3>{item.title}</h3>
-                    <div className="movie-stars">
-                        <Star/>
-                        {item.votes}
-                    </div>
-                </div>
-                <div className="button-card">
-                    <button>Sacola <span>R${item.price}</span></button>
-                </div>
-            </div>
-        ))}
-        </>
-    );
+import { ReactComponent as GoldenStar } from '../../assets/images/golden-star.svg';
+
+import './style.css';
+import PriceButton from '../PriceButton';
+
+function MovieCard({ title, vote_average, price, poster_path, handleMovieBuy }) {
+
+  const background = "linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url('" + poster_path + "') no-repeat center / cover";
+
+  return (
+    <div className="movie-card" style={{ background }}>
+        <div className="movie-info">
+          <h3 title={title}>{title}</h3> 
+          <div className="movie-stars">
+            <GoldenStar />
+            {vote_average}
+          </div>
+        </div>
+        <PriceButton 
+        text="Cart" 
+        type="movie" 
+        price={price} 
+        onClickHandler={() => handleMovieBuy({ title, poster_path, price })} 
+        />
+    </div>
+  );
 }
 
-export default Card;
+export default MovieCard;

@@ -1,67 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
-body {
-  margin: 0px;
-  font-family: 'Manrope', sans-serif;
-  background-color: #1D2226;
-}
+.App {
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: "header header" "main bag";
+	gap: 24px 50px;
+	background-color: #1D2226;
+	font-family: 'Manrope', sans-serif;
+  }
+  
+  .App > header {
+	grid-area: header;
+  }
+  
+  .App > main {
+	grid-area: main;
+  }
+  
+  .App > .bag {
+	grid-area: bag;
+	margin-right: 96px;
+  }
+  
+  .content {
+	padding-left: 96px;
+	padding-bottom: 24px;
+	position: relative;
+	flex-grow: 1;
+  }
+  
+  .top-movies {
+	margin-bottom: 40px;
+  }
+  
+  .top-movies h2, .movies h2 {
+	color: #FFF;
+	margin-bottom: 16px;
+  }
+  
+  .movies-grid {
+	max-width: 937px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 168px);
+	gap: 24px;
+  }
+  
+  .movies .search-container {
+	display: none;
+  }
 
-.app {
-  display: flex;
-  flex-direction: column;
-}
-
-.movies-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cart {
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-}
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+  * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  }
+  
+  body {
+	font-family: 'Manrope', sans-serif;
+	overflow-x: hidden;
+  }
+  
+  html {
+	background: #1D2226;
+  }

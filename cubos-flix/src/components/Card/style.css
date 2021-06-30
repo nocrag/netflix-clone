@@ -1,60 +1,31 @@
-.card {
+.movie-card {
+    height: 300px;
+    padding: 12px 8px 6px 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 168px;
-    height: 300px;
-    padding: 12px 8px 6px;
-    background: center center/cover no-repeat;
-}
-
-.movie-info {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  .movie-card > svg {
+    cursor: pointer;
+  }
+  
+  
+  .movie-info {
     margin-top: auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    width: 100%;
-}
-.movie-info h3 {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+  }
+  
+  .movie-info h3 {
+    color: #FFF;
     max-width: 100px;
-    color: white;
-}
-
-.movie-poster {
-    width: 180px;
-    height: 250px;
-    opacity: 0.5;
-}
-
-.button-card {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-}
-
-.button-card button {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 8px;
-    width: 100%;
-    cursor: pointer;
-    background-color: #A785ED;
-    color: #EEE5FF;
-    font-size: 12px;
-    font-weight: 700;
-    border: none;
-}
-
-.button-card button:hover {
-    background-color:rgba(167, 133, 237, 0.80);
-}
-
-.movie-stars {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .movie-info .movie-stars {
     color: #FBCD6E;
-    font-weight: 700;
-    font-size: 12px;    
-}
+  }
