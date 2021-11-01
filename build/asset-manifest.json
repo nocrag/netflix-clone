@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a81c2dbf.chunk.css",
+    "main.js": "/static/js/main.49d2bc1e.chunk.js",
+    "main.js.map": "/static/js/main.49d2bc1e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09430a44.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09430a44.js.map",
+    "static/js/2.3ee51d77.chunk.js": "/static/js/2.3ee51d77.chunk.js",
+    "static/js/2.3ee51d77.chunk.js.map": "/static/js/2.3ee51d77.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a81c2dbf.chunk.css.map": "/static/css/main.a81c2dbf.chunk.css.map",
+    "static/js/2.3ee51d77.chunk.js.LICENSE.txt": "/static/js/2.3ee51d77.chunk.js.LICENSE.txt",
+    "static/media/avatar.4997cb8f.jpeg": "/static/media/avatar.4997cb8f.jpeg",
+    "static/media/golden-star.41574558.svg": "/static/media/golden-star.41574558.svg",
+    "static/media/logo.13ada090.svg": "/static/media/logo.13ada090.svg",
+    "static/media/minus-icon.1692ddb9.svg": "/static/media/minus-icon.1692ddb9.svg",
+    "static/media/person-illustration.98d2cbfb.svg": "/static/media/person-illustration.98d2cbfb.svg",
+    "static/media/plus-icon.b9289148.svg": "/static/media/plus-icon.b9289148.svg",
+    "static/media/search-icon.069553f7.svg": "/static/media/search-icon.069553f7.svg",
+    "static/media/trash-icon.bfe50f56.svg": "/static/media/trash-icon.bfe50f56.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09430a44.js",
+    "static/js/2.3ee51d77.chunk.js",
+    "static/css/main.a81c2dbf.chunk.css",
+    "static/js/main.49d2bc1e.chunk.js"
+  ]
+}
